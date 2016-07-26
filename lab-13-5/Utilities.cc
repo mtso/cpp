@@ -1,7 +1,13 @@
+// 
+// Utilities.cc: Common functions used in De Anza CIS 22 Labs.
+//
+// Created by Matthew Tso, 2016.
+//
 
 #include <iostream>
 #include "Utilities.h"
 
+// Input validation for a positive integer.
 int getPositiveInteger() {
     int input;
     bool validInput = false;

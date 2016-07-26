@@ -1,5 +1,5 @@
 //
-//  SavingsAccount.cpp
+//  SavingsAccount.cc
 //  lab-13-5
 //
 //  Created by Matthew Tso on 7/21/16.
@@ -14,10 +14,10 @@
 class SavingsAccount {
 public:
 
-	SavingsAccount(int = 0, int = 0);
-//    SavingsAccount (SavingsAccount& sourceAccount);
-//    SavingsAccount operator= (SavingsAccount& sourceAccount);
-    ~SavingsAccount() {} // Nothing to delete.
+	SavingsAccount(int = 0, int = 0); 				// Default constructor
+    SavingsAccount(SavingsAccount&);				// Copy constructor
+    SavingsAccount& operator= (SavingsAccount&);		// Copy assignment constructor	
+    // ~SavingsAccount() {} 						// Nothing to delete.
 
     Currency deposit(int, int = 0);
     bool withdraw(int, int = 0);
